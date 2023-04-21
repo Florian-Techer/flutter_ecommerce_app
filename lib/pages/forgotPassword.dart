@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 
 class ForgotPasswordPage extends StatefulWidget {
@@ -17,7 +15,6 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
 
   Widget build(BuildContext context) {
     const mainBgColor = Color(0xfff9f9f9);
-    const white = Color(0xffffffff);
 
     return Scaffold(
       appBar: AppBar(
@@ -50,7 +47,8 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
               children: [
                 Expanded(
                   child: Text(
-                      "Please enter your email address. You will receive a link to create a new password via email",),
+                    "Please enter your email address. You will receive a link to create a new password via email",
+                  ),
                 )
               ],
             ),
