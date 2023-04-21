@@ -1,5 +1,6 @@
 import 'pages/signUp.dart';
 import 'pages/login.dart';
+import 'pages/forgotPassword.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
@@ -28,7 +29,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.grey,
       ),
       //home: const Page(title: 'Connexion'),
-      home: SignUpPage(),
+      home: ForgotPasswordPage(),
     );
   }
 }
