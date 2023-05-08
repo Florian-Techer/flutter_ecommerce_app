@@ -1,7 +1,7 @@
+import 'pages/home.dart';
 import 'pages/signUp.dart';
 import 'pages/login.dart';
 import 'pages/forgotPassword.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -29,7 +29,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.grey,
       ),
       //home: const Page(title: 'Connexion'),
-      home: ForgotPasswordPage(),
+      home: HomePage(),
     );
   }
 }
