@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -6,26 +7,26 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-  final Widget backArrow = Image.asset(
-    'assets/images/png/left-arrow.png',
+  final Widget backArrow = SvgPicture.asset(
+    'assets/images/svg/left-arrow.svg',
     // semanticsLabel: 'Retour en arrière',
-    width: 20,
-    fit: BoxFit.scaleDown,
+    width: 25,
+    height: 25,
   );
 
-  final Widget redRightArrow = Image.asset(
-    'assets/images/png/red-right-arrow.png',
+  final Widget redRightArrow = SvgPicture.asset(
+    'assets/images/svg/red-right-arrow.svg',
     width: 15,
     fit: BoxFit.scaleDown,
   );
 
-  final Widget googleAsset = Image.asset(
-    'assets/images/png/google.png',
+  final Widget googleAsset = SvgPicture.asset(
+    'assets/images/svg/google.svg',
     width: 25,
     fit: BoxFit.scaleDown,
   );
-  final Widget facebookAsset = Image.asset(
-    'assets/images/png/facebook.png',
+  final Widget facebookAsset = SvgPicture.asset(
+    'assets/images/svg/facebook.svg',
     width: 25,
     fit: BoxFit.scaleDown,
   );

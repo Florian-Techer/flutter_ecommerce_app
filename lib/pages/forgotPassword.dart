@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class ForgotPasswordPage extends StatefulWidget {
   @override
@@ -6,11 +7,11 @@ class ForgotPasswordPage extends StatefulWidget {
 }
 
 class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
-  final Widget backArrow = Image.asset(
-    'assets/images/png/left-arrow.png',
+  final Widget backArrow = SvgPicture.asset(
+    'assets/images/svg/left-arrow.svg',
     // semanticsLabel: 'Retour en arrière',
-    width: 20,
-    fit: BoxFit.scaleDown,
+    width: 25,
+    height: 25,
   );
 
   Widget build(BuildContext context) {

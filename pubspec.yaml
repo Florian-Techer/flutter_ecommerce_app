@@ -35,6 +35,7 @@ dependencies:
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
+  flutter_svg: ^2.0.5
 
 dev_dependencies:
   flutter_test:
@@ -61,21 +62,21 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
     - assets/datas/categories.json
-    - assets/images/png/arrow.png
-    - assets/images/png/red-right-arrow.png
-    - assets/images/png/left-arrow.png
-    - assets/images/png/facebook.png
-    - assets/images/png/google.png
+    - assets/images/svg/arrow.svg
+    - assets/images/svg/red-right-arrow.svg
+    - assets/images/svg/left-arrow.svg
+    - assets/images/svg/facebook.svg
+    - assets/images/svg/google.svg
     - assets/images/png/item-list-image.png
     - assets/images/png/item-list-image2.png
     - assets/images/png/main-home-image.png
-    - assets/images/png/favorite.png
+    - assets/images/svg/heart.svg
     - assets/images/png/star.png
     - assets/images/png/starFilled.png
-    - assets/images/png/home.png
-    - assets/images/png/cart.png
-    - assets/images/png/bag.png
-    - assets/images/png/profile.png
+    - assets/images/svg/home.svg
+    - assets/images/svg/cart.svg
+    - assets/images/svg/bag.svg
+    - assets/images/svg/profile.svg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
