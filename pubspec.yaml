@@ -77,6 +77,10 @@ flutter:
     - assets/images/svg/cart.svg
     - assets/images/svg/bag.svg
     - assets/images/svg/profile.svg
+    - assets/images/png/new.png
+    - assets/images/png/shoes.png
+    - assets/images/png/clothes.png
+    - assets/images/png/accesories.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware

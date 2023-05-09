@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "id": "p1",
+      "name": "New",
+      "imageSrc": "assets/images/png/new.png"
+    },
+    {
+      "id": "p2",
+      "name": "Clothes",
+      "imageSrc": "assets/images/png/clothes.png"
+    },
+    {
+      "id": "p3",
+      "name": "Shoes",
+      "imageSrc": "assets/images/png/shoes.png"
+    },
+    {
+      "id": "p3",
+      "name": "Accesories",
+      "imageSrc": "assets/images/png/accesories.png"
+    }
+  ]
+}
