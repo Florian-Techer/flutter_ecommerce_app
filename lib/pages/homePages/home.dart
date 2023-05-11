@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import '../navigation.dart';
+import '../../navigation.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -8,7 +8,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-  final Widget MainImage = Image.asset(
+  final Widget mainImage = Image.asset(
     'assets/images/png/main-home-image.png',
     width: double.infinity,
     fit: BoxFit.fill,
@@ -56,9 +56,8 @@ class _HomePageState extends State<HomePage> {
               margin: const EdgeInsets.only(bottom: 20),
               height: 200,
               width: double.infinity,
-              color: Colors.amber,
               child: Stack(children: [
-                MainImage,
+                mainImage,
                 const Positioned(
                   bottom: 10.0,
                   left: 10.0,

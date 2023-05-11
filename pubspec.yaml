@@ -71,8 +71,6 @@ flutter:
     - assets/images/png/item-list-image2.png
     - assets/images/png/main-home-image.png
     - assets/images/svg/heart.svg
-    - assets/images/png/star.png
-    - assets/images/png/starFilled.png
     - assets/images/svg/home.svg
     - assets/images/svg/cart.svg
     - assets/images/svg/bag.svg

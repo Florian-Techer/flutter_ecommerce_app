@@ -1,23 +1,67 @@
 {
-  "items": [
+  "womenCategories": [
     {
-      "id": "p1",
+      "id": "1",
       "name": "New",
       "imageSrc": "assets/images/png/new.png"
     },
     {
-      "id": "p2",
+      "id": "2",
       "name": "Clothes",
       "imageSrc": "assets/images/png/clothes.png"
     },
     {
-      "id": "p3",
+      "id": "3",
       "name": "Shoes",
       "imageSrc": "assets/images/png/shoes.png"
     },
     {
-      "id": "p3",
+      "id": "4",
       "name": "Accesories",
+      "imageSrc": "assets/images/png/accesories.png"
+    }
+  ],
+  "menCategories": [
+    {
+      "id": "1",
+      "name": "New",
+      "imageSrc": "assets/images/png/accesories.png"
+    },
+    {
+      "id": "2",
+      "name": "Hoodies",
+      "imageSrc": "assets/images/png/accesories.png"
+    },
+    {
+      "id": "3",
+      "name": "shoes",
+      "imageSrc": "assets/images/png/accesories.png"
+    },
+    {
+      "id": "4",
+      "name": "trousers",
+      "imageSrc": "assets/images/png/accesories.png"
+    }
+  ],
+  "kidsCategories": [
+    {
+      "id": "1",
+      "name": "New",
+      "imageSrc": "assets/images/png/accesories.png"
+    },
+    {
+      "id": "2",
+      "name": "T-shirt",
+      "imageSrc": "assets/images/png/accesories.png"
+    },
+    {
+      "id": "3",
+      "name": "socks",
+      "imageSrc": "assets/images/png/accesories.png"
+    },
+    {
+      "id": "4",
+      "name": "accesories",
       "imageSrc": "assets/images/png/accesories.png"
     }
   ]

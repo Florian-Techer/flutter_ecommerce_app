@@ -1,6 +1,7 @@
-import 'pages/home.dart';
+import 'pages/homePages/home.dart';
 import 'pages/signUp.dart';
 import 'pages/login.dart';
+import 'pages/categoriesPage/categoriesList.dart';
 import 'pages/forgotPassword.dart';
 import 'package:flutter/material.dart';
 
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.grey,
       ),
       //home: const Page(title: 'Connexion'),
-      home: HomePage(),
+      home: const CategoriesListPage(),
     );
   }
 }
