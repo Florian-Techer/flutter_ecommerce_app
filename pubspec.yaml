@@ -32,10 +32,12 @@ dependencies:
     sdk: flutter
 
 
+
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.2
   flutter_svg: ^2.0.5
+  flutter_staggered_grid_view: ^0.6.2
 
 dev_dependencies:
   flutter_test:
@@ -53,7 +55,13 @@ dev_dependencies:
 
 # The following section is specific to Flutter packages.
 flutter:
-
+  fonts:
+    - family: metropolisRegular
+      fonts:
+        - asset: assets/fonts/Metropolis-Regular.otf
+    - family: metropolisBold
+      fonts:
+        - asset: assets/fonts/Metropolis-Bold.otf
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -73,12 +81,17 @@ flutter:
     - assets/images/svg/heart.svg
     - assets/images/svg/home.svg
     - assets/images/svg/cart.svg
-    - assets/images/svg/bag.svg
+    - assets/images/svg/cart.svg
+    - assets/images/svg/star.svg
+    - assets/images/svg/starFilled.svg
     - assets/images/svg/profile.svg
     - assets/images/png/new.png
     - assets/images/png/shoes.png
     - assets/images/png/clothes.png
     - assets/images/png/accesories.png
+    - assets/images/png/newCollection.png
+    - assets/images/png/mensHoodies.png
+    - assets/images/png/black.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
