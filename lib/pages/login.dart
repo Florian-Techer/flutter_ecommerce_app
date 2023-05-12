@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import '../pages/homePages/home.dart';
+import '../pages/forgotPassword.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -34,10 +36,14 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
     const mainBgColor = Color(0xfff9f9f9);
     const white = Color(0xffffffff);
-    
+
     return Scaffold(
         appBar: AppBar(
-            backgroundColor: mainBgColor, toolbarHeight: 30, elevation: 0),
+          backgroundColor: mainBgColor,
+          toolbarHeight: 30,
+          elevation: 0,
+          automaticallyImplyLeading: false,
+        ),
         body: SafeArea(
             child: Container(
           decoration: const BoxDecoration(
@@ -55,7 +61,10 @@ class _LoginPageState extends State<LoginPage> {
                   child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        backArrow,
+                        GestureDetector(
+                          child: backArrow,
+                          onTap: () => {Navigator.pop(context)},
+                        ),
                         Container(
                           margin: const EdgeInsets.only(top: 20),
                           child: const Text('Login',
@@ -96,9 +105,18 @@ class _LoginPageState extends State<LoginPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  const Text(
-                    "Forgot your password ? ",
-                    style: TextStyle(fontSize: 15.0, color: Colors.black),
+                  GestureDetector(
+                    child: const Text(
+                      "Forgot your password ? ",
+                      style: TextStyle(fontSize: 15.0, color: Colors.black),
+                    ),
+                    onTap: () => {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => ForgotPasswordPage()),
+                      )
+                    },
                   ),
                   redRightArrow
                 ],
@@ -106,13 +124,18 @@ class _LoginPageState extends State<LoginPage> {
               Container(
                   width: double.infinity,
                   padding: const EdgeInsets.only(top: 15, bottom: 15),
-                  child: const FilledButton(
-                    onPressed: null,
-                    style: ButtonStyle(
+                  child: FilledButton(
+                    onPressed: () => {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => HomePage()),
+                      )
+                    },
+                    style: const ButtonStyle(
                       backgroundColor:
                           MaterialStatePropertyAll<Color>(Colors.red),
                     ),
-                    child: Text(
+                    child: const Text(
                       "LOGIN",
                       style: TextStyle(color: Colors.white, letterSpacing: 1),
                     ),

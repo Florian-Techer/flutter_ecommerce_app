@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ecommerce_app/pages/homePages/home.dart';
+import 'package:flutter_ecommerce_app/pages/login.dart';
 import 'package:flutter_svg/svg.dart';
 
 class SignUpPage extends StatefulWidget {
@@ -40,6 +42,7 @@ class _SignUpPageState extends State<SignUpPage> {
           backgroundColor: mainBgColor,
           toolbarHeight: 30,
           elevation: 0,
+          automaticallyImplyLeading: false,
           // padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
         ),
         body: SafeArea(
@@ -77,6 +80,17 @@ class _SignUpPageState extends State<SignUpPage> {
                           border: OutlineInputBorder(
                             borderSide: BorderSide.none,
                           ),
+                          labelText: 'Name',
+                          floatingLabelStyle: TextStyle(height: 3),
+                          contentPadding: EdgeInsets.only(left: 15, right: 15)),
+                    ),
+                  ),
+                  const Card(
+                    child: TextField(
+                      decoration: InputDecoration(
+                          border: OutlineInputBorder(
+                            borderSide: BorderSide.none,
+                          ),
                           labelText: 'Email',
                           floatingLabelStyle: TextStyle(height: 3),
                           contentPadding: EdgeInsets.only(left: 15, right: 15)),
@@ -98,9 +112,18 @@ class _SignUpPageState extends State<SignUpPage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
-                      const Text(
-                        'Forgot your password?',
-                        style: TextStyle(fontSize: 15.0, color: Colors.black),
+                      GestureDetector(
+                        child: const Text(
+                          'Already have an account?',
+                          style: TextStyle(fontSize: 15.0, color: Colors.black),
+                        ),
+                        onTap: () => {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => LoginPage()),
+                          )
+                        },
                       ),
                       const SizedBox(
                         width: 5,
@@ -112,7 +135,13 @@ class _SignUpPageState extends State<SignUpPage> {
                   Container(
                       width: double.infinity,
                       child: FilledButton(
-                          onPressed: null,
+                          onPressed: () => {
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => HomePage()),
+                                )
+                              },
                           style: const ButtonStyle(
                               backgroundColor:
                                   MaterialStatePropertyAll<Color>(Colors.red)),

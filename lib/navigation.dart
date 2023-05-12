@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ecommerce_app/pages/categoriesPage/categoriesList.dart';
+import 'package:flutter_ecommerce_app/pages/homePages/home.dart';
+import 'package:flutter_ecommerce_app/pages/homePages/home2.dart';
+import 'package:flutter_ecommerce_app/pages/login.dart';
+import 'package:flutter_ecommerce_app/pages/signUp.dart';
 import 'package:flutter_svg/svg.dart';
 
 class NavigationPage extends StatefulWidget {
@@ -69,19 +74,40 @@ class _NavigationPageState extends State<NavigationPage> {
                     icon: Icons.home,
                     selectedIcon: Icons.home_outlined,
                     selected: _currentIndex == 0,
-                    onPressed: () => {setState((() => _currentIndex = 0))}),
+                    onPressed: () => {
+                          setState((() => _currentIndex = 0)),
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => HomePage2()),
+                          )
+                        }),
                 IconBottomBar(
                     text: "shop",
                     icon: Icons.shopping_cart,
                     selectedIcon: Icons.shopping_cart_outlined,
                     selected: _currentIndex == 1,
-                    onPressed: () => {setState((() => _currentIndex = 1))}),
+                    onPressed: () => {
+                          setState((() => _currentIndex = 1)),
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    const CategoriesListPage()),
+                          )
+                        }),
                 IconBottomBar(
                     text: "bag",
                     icon: Icons.shopping_bag,
                     selectedIcon: Icons.shopping_bag_outlined,
                     selected: _currentIndex == 2,
-                    onPressed: () => {setState((() => _currentIndex = 2))}),
+                    onPressed: () => {
+                          setState((() => _currentIndex = 2)),
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => HomePage()),
+                          )
+                        }),
                 IconBottomBar(
                     text: "favorite",
                     icon: Icons.favorite,
@@ -93,13 +119,20 @@ class _NavigationPageState extends State<NavigationPage> {
                     icon: Icons.person,
                     selectedIcon: Icons.person_outline_outlined,
                     selected: _currentIndex == 4,
-                    onPressed: () => {setState((() => _currentIndex = 4))})
+                    onPressed: () => {
+                          setState((() => _currentIndex = 4)),
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => SignUpPage()),
+                          )
+                        })
               ],
             ),
           ),
         ),
       ),
-      
+
       // child: SizedBox(
       //   height: 56,
       //   width: MediaQuery.of(context).size.width,

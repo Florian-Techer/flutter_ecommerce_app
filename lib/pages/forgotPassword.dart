@@ -22,6 +22,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
         backgroundColor: mainBgColor,
         toolbarHeight: 30,
         elevation: 0,
+        automaticallyImplyLeading: false,
         // padding: EdgeInsets.symmetric(vertical: 10, horizontal: 10),
       ),
       body: SafeArea(
@@ -34,7 +35,10 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
           child:
               Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
             Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              backArrow,
+              GestureDetector(
+                child: backArrow,
+                onTap: () => {Navigator.pop(context)},
+              ),
               Container(
                 margin: const EdgeInsets.only(top: 20, bottom: 25),
                 child: const Text(

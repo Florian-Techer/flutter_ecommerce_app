@@ -34,13 +34,13 @@ class _HomePageState extends State<HomePage> {
     ),
   );
 
-  final Widget star = Image.asset(
-    'assets/images/png/star.png',
+  final Widget star = SvgPicture.asset(
+    'assets/images/svg/star.svg',
     width: 12,
   );
 
-  final Widget starFilled = Image.asset(
-    'assets/images/png/starFilled.png',
+  final Widget starFilled = SvgPicture.asset(
+    'assets/images/svg/starFilled.svg',
     width: 12,
   );
 

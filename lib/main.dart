@@ -1,4 +1,5 @@
 import 'pages/homePages/home.dart';
+import 'pages/homePages/home2.dart';
 import 'pages/signUp.dart';
 import 'pages/login.dart';
 import 'pages/categoriesPage/categoriesList.dart';
@@ -29,8 +30,15 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.grey,
       ),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => SignUpPage(),
+        '/loginpage': (context) => LoginPage(),
+        '/forgotpassword': (context) => ForgotPasswordPage(),
+        '/home': (context) => HomePage(),
+      },
       //home: const Page(title: 'Connexion'),
-      home: const CategoriesListPage(),
+      // home: HomePage(),
     );
   }
 }
