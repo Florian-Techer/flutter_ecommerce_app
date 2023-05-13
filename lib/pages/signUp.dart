@@ -4,6 +4,8 @@ import 'package:flutter_ecommerce_app/pages/login.dart';
 import 'package:flutter_svg/svg.dart';
 
 class SignUpPage extends StatefulWidget {
+  const SignUpPage({super.key});
+
   @override
   State<SignUpPage> createState() => _SignUpPageState();
 }
@@ -34,6 +36,7 @@ class _SignUpPageState extends State<SignUpPage> {
     fit: BoxFit.scaleDown,
   );
 
+  @override
   Widget build(BuildContext context) {
     const mainBgColor = Color(0xfff9f9f9);
     const white = Color(0xffffffff);
@@ -121,7 +124,7 @@ class _SignUpPageState extends State<SignUpPage> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => LoginPage()),
+                                builder: (context) => const LoginPage()),
                           )
                         },
                       ),
@@ -132,14 +135,14 @@ class _SignUpPageState extends State<SignUpPage> {
                     ],
                   ),
                   const SizedBox(height: 40),
-                  Container(
+                  SizedBox(
                       width: double.infinity,
                       child: FilledButton(
                           onPressed: () => {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => HomePage()),
+                                      builder: (context) => const HomePage()),
                                 )
                               },
                           style: const ButtonStyle(

@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class MenCategoriesPage extends StatefulWidget {
+  const MenCategoriesPage({super.key});
+
   @override
   State<MenCategoriesPage> createState() => _MenCategoriesPageState();
 }
@@ -25,6 +27,7 @@ class _MenCategoriesPageState extends State<MenCategoriesPage> {
     readJson();
   }
 
+  @override
   Widget build(BuildContext context) {
     const white = Color(0xffffffff);
     return Column(

@@ -2,22 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app/pages/categoriesPage/categoriesList.dart';
 import 'package:flutter_ecommerce_app/pages/homePages/home.dart';
 import 'package:flutter_ecommerce_app/pages/homePages/home2.dart';
-import 'package:flutter_ecommerce_app/pages/login.dart';
 import 'package:flutter_ecommerce_app/pages/signUp.dart';
 import 'package:flutter_svg/svg.dart';
 
 class NavigationPage extends StatefulWidget {
+  const NavigationPage({super.key});
+
   @override
   State<NavigationPage> createState() => _NavigationPageState();
 }
-// final Widget homeIcon = ColorFiltered(
-//     colorFilter: const ColorFilter.mode(Colors.red, BlendMode.srcIn),
-//     child: SvgPicture.asset(
-//       'assets/images/svg/home.svg',
-//   width: 30,
-//   height: 30,
-//     ),
-//   );
 
 final Widget homeIcon = SvgPicture.asset(
   'assets/images/svg/home.svg',
@@ -47,6 +40,7 @@ final Widget profileIcon = SvgPicture.asset(
 int _currentIndex = 0;
 
 class _NavigationPageState extends State<NavigationPage> {
+  @override
   Widget build(BuildContext context) {
     const mainBgColor = Color(0xfff9f9f9);
     const white = Color(0xffffffff);
@@ -79,7 +73,7 @@ class _NavigationPageState extends State<NavigationPage> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => HomePage2()),
+                                builder: (context) => const HomePage2()),
                           )
                         }),
                 IconBottomBar(
@@ -105,7 +99,7 @@ class _NavigationPageState extends State<NavigationPage> {
                           setState((() => _currentIndex = 2)),
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => HomePage()),
+                            MaterialPageRoute(builder: (context) => const HomePage()),
                           )
                         }),
                 IconBottomBar(
@@ -124,7 +118,7 @@ class _NavigationPageState extends State<NavigationPage> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => SignUpPage()),
+                                builder: (context) => const SignUpPage()),
                           )
                         })
               ],
@@ -132,50 +126,6 @@ class _NavigationPageState extends State<NavigationPage> {
           ),
         ),
       ),
-
-      // child: SizedBox(
-      //   height: 56,
-      //   width: MediaQuery.of(context).size.width,
-      //   child: Padding(
-      //     padding: const EdgeInsets.only(left: 25.0, right: 25.0),
-      //     child: Row(
-      //       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      //       crossAxisAlignment: CrossAxisAlignment.start,
-      //       children: [
-      //         IconBottomBar(
-      //             text: "Home",
-      //             icon: Icons.home,
-      //             selectedIcon: Icons.home_outlined,
-      //             selected: _currentIndex == 0,
-      //             onPressed: () => {setState((() => _currentIndex = 0))}),
-      //         IconBottomBar(
-      //             text: "shop",
-      //             icon: Icons.shopping_cart,
-      //             selectedIcon: Icons.shopping_cart_outlined,
-      //             selected: _currentIndex == 1,
-      //             onPressed: () => {setState((() => _currentIndex = 1))}),
-      //         IconBottomBar(
-      //             text: "bag",
-      //             icon: Icons.shopping_bag,
-      //             selectedIcon: Icons.shopping_bag_outlined,
-      //             selected: _currentIndex == 2,
-      //             onPressed: () => {setState((() => _currentIndex = 2))}),
-      //         IconBottomBar(
-      //             text: "favorite",
-      //             icon: Icons.favorite,
-      //             selectedIcon: Icons.favorite_outline,
-      //             selected: _currentIndex == 3,
-      //             onPressed: () => {setState((() => _currentIndex = 3))}),
-      //         IconBottomBar(
-      //             text: "profile",
-      //             icon: Icons.person,
-      //             selectedIcon: Icons.person_outline_outlined,
-      //             selected: _currentIndex == 4,
-      //             onPressed: () => {setState((() => _currentIndex = 4))})
-      //       ],
-      //     ),
-      //   ),
-      // ),
     );
   }
 }

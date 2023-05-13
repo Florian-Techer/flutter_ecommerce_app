@@ -3,6 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class KidsCategoriesPage extends StatefulWidget {
+  const KidsCategoriesPage({super.key});
+
   @override
   State<KidsCategoriesPage> createState() => _KidsCategoriesPageState();
 }
@@ -25,6 +27,7 @@ class _KidsCategoriesPageState extends State<KidsCategoriesPage> {
     readJson();
   }
 
+  @override
   Widget build(BuildContext context) {
     const white = Color(0xffffffff);
     return Column(

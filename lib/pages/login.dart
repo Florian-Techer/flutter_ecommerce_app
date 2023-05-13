@@ -4,6 +4,8 @@ import '../pages/homePages/home.dart';
 import '../pages/forgotPassword.dart';
 
 class LoginPage extends StatefulWidget {
+  const LoginPage({super.key});
+
   @override
   State<LoginPage> createState() => _LoginPageState();
 }
@@ -33,6 +35,7 @@ class _LoginPageState extends State<LoginPage> {
     fit: BoxFit.scaleDown,
   );
 
+  @override
   Widget build(BuildContext context) {
     const mainBgColor = Color(0xfff9f9f9);
     const white = Color(0xffffffff);
@@ -114,7 +117,7 @@ class _LoginPageState extends State<LoginPage> {
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => ForgotPasswordPage()),
+                            builder: (context) => const ForgotPasswordPage()),
                       )
                     },
                   ),
@@ -128,7 +131,7 @@ class _LoginPageState extends State<LoginPage> {
                     onPressed: () => {
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => HomePage()),
+                        MaterialPageRoute(builder: (context) => const HomePage()),
                       )
                     },
                     style: const ButtonStyle(

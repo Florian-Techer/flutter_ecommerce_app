@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 class ForgotPasswordPage extends StatefulWidget {
+  const ForgotPasswordPage({super.key});
+
   @override
   State<ForgotPasswordPage> createState() => _ForgotPasswordPageState();
 }
@@ -14,6 +16,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
     height: 25,
   );
 
+  @override
   Widget build(BuildContext context) {
     const mainBgColor = Color(0xfff9f9f9);
 
@@ -69,7 +72,7 @@ class _ForgotPasswordPageState extends State<ForgotPasswordPage> {
                     contentPadding: EdgeInsets.only(left: 15, right: 15)),
               ),
             ),
-            Container(
+            SizedBox(
                 width: double.infinity,
                 child: FilledButton(
                     onPressed: null,

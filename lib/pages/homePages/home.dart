@@ -3,6 +3,8 @@ import 'package:flutter_svg/svg.dart';
 import '../../navigation.dart';
 
 class HomePage extends StatefulWidget {
+  const HomePage({super.key});
+
   @override
   State<HomePage> createState() => _HomePageState();
 }
@@ -43,7 +45,7 @@ class _HomePageState extends State<HomePage> {
     'assets/images/svg/starFilled.svg',
     width: 12,
   );
-
+  @override
   Widget build(BuildContext context) {
     const mainBgColor = Color(0xfff9f9f9);
     const white = Color(0xffffffff);
@@ -106,7 +108,8 @@ class _HomePageState extends State<HomePage> {
                             children: [
                               Container(
                                 margin: const EdgeInsets.only(bottom: 10),
-                                child: Stack(clipBehavior: Clip.none, children: [
+                                child:
+                                    Stack(clipBehavior: Clip.none, children: [
                                   itemListImage1,
                                   Positioned(
                                     bottom: -20.0,
@@ -114,7 +117,8 @@ class _HomePageState extends State<HomePage> {
                                     child: Container(
                                         padding: const EdgeInsets.all(9),
                                         decoration: const BoxDecoration(
-                                            color: white, shape: BoxShape.circle),
+                                            color: white,
+                                            shape: BoxShape.circle),
                                         width: 35,
                                         height: 35,
                                         child: favorite),
@@ -190,7 +194,8 @@ class _HomePageState extends State<HomePage> {
                             children: [
                               Container(
                                 margin: const EdgeInsets.only(bottom: 10),
-                                child: Stack(clipBehavior: Clip.none, children: [
+                                child:
+                                    Stack(clipBehavior: Clip.none, children: [
                                   itemListImage2,
                                   Positioned(
                                     bottom: -20.0,
@@ -198,7 +203,8 @@ class _HomePageState extends State<HomePage> {
                                     child: Container(
                                         padding: const EdgeInsets.all(9),
                                         decoration: const BoxDecoration(
-                                            color: white, shape: BoxShape.circle),
+                                            color: white,
+                                            shape: BoxShape.circle),
                                         width: 35,
                                         height: 35,
                                         child: favorite),
@@ -274,7 +280,8 @@ class _HomePageState extends State<HomePage> {
                             children: [
                               Container(
                                 margin: const EdgeInsets.only(bottom: 10),
-                                child: Stack(clipBehavior: Clip.none, children: [
+                                child:
+                                    Stack(clipBehavior: Clip.none, children: [
                                   itemListImage1,
                                   Positioned(
                                     bottom: -20.0,
@@ -282,7 +289,8 @@ class _HomePageState extends State<HomePage> {
                                     child: Container(
                                         padding: const EdgeInsets.all(9),
                                         decoration: const BoxDecoration(
-                                            color: white, shape: BoxShape.circle),
+                                            color: white,
+                                            shape: BoxShape.circle),
                                         width: 35,
                                         height: 35,
                                         child: favorite),
@@ -358,7 +366,8 @@ class _HomePageState extends State<HomePage> {
                             children: [
                               Container(
                                 margin: const EdgeInsets.only(bottom: 10),
-                                child: Stack(clipBehavior: Clip.none, children: [
+                                child:
+                                    Stack(clipBehavior: Clip.none, children: [
                                   itemListImage2,
                                   Positioned(
                                     bottom: -20.0,
@@ -366,7 +375,8 @@ class _HomePageState extends State<HomePage> {
                                     child: Container(
                                         padding: const EdgeInsets.all(9),
                                         decoration: const BoxDecoration(
-                                            color: white, shape: BoxShape.circle),
+                                            color: white,
+                                            shape: BoxShape.circle),
                                         width: 35,
                                         height: 35,
                                         child: favorite),
@@ -471,7 +481,8 @@ class _HomePageState extends State<HomePage> {
                             children: [
                               Container(
                                 margin: const EdgeInsets.only(bottom: 10),
-                                child: Stack(clipBehavior: Clip.none, children: [
+                                child:
+                                    Stack(clipBehavior: Clip.none, children: [
                                   itemListImage1,
                                   Positioned(
                                     bottom: -20.0,
@@ -479,7 +490,8 @@ class _HomePageState extends State<HomePage> {
                                     child: Container(
                                         padding: const EdgeInsets.all(9),
                                         decoration: const BoxDecoration(
-                                            color: white, shape: BoxShape.circle),
+                                            color: white,
+                                            shape: BoxShape.circle),
                                         width: 35,
                                         height: 35,
                                         child: favorite),
@@ -555,7 +567,8 @@ class _HomePageState extends State<HomePage> {
                             children: [
                               Container(
                                 margin: const EdgeInsets.only(bottom: 10),
-                                child: Stack(clipBehavior: Clip.none, children: [
+                                child:
+                                    Stack(clipBehavior: Clip.none, children: [
                                   itemListImage2,
                                   Positioned(
                                     bottom: -20.0,
@@ -563,7 +576,8 @@ class _HomePageState extends State<HomePage> {
                                     child: Container(
                                         padding: const EdgeInsets.all(9),
                                         decoration: const BoxDecoration(
-                                            color: white, shape: BoxShape.circle),
+                                            color: white,
+                                            shape: BoxShape.circle),
                                         width: 35,
                                         height: 35,
                                         child: favorite),
@@ -639,7 +653,8 @@ class _HomePageState extends State<HomePage> {
                             children: [
                               Container(
                                 margin: const EdgeInsets.only(bottom: 10),
-                                child: Stack(clipBehavior: Clip.none, children: [
+                                child:
+                                    Stack(clipBehavior: Clip.none, children: [
                                   itemListImage1,
                                   Positioned(
                                     bottom: -20.0,
@@ -647,7 +662,8 @@ class _HomePageState extends State<HomePage> {
                                     child: Container(
                                         padding: const EdgeInsets.all(9),
                                         decoration: const BoxDecoration(
-                                            color: white, shape: BoxShape.circle),
+                                            color: white,
+                                            shape: BoxShape.circle),
                                         width: 35,
                                         height: 35,
                                         child: favorite),
@@ -723,7 +739,8 @@ class _HomePageState extends State<HomePage> {
                             children: [
                               Container(
                                 margin: const EdgeInsets.only(bottom: 10),
-                                child: Stack(clipBehavior: Clip.none, children: [
+                                child:
+                                    Stack(clipBehavior: Clip.none, children: [
                                   itemListImage2,
                                   Positioned(
                                     bottom: -20.0,
@@ -731,7 +748,8 @@ class _HomePageState extends State<HomePage> {
                                     child: Container(
                                         padding: const EdgeInsets.all(9),
                                         decoration: const BoxDecoration(
-                                            color: white, shape: BoxShape.circle),
+                                            color: white,
+                                            shape: BoxShape.circle),
                                         width: 35,
                                         height: 35,
                                         child: favorite),
@@ -810,7 +828,7 @@ class _HomePageState extends State<HomePage> {
           ]),
         ),
       ),
-      bottomNavigationBar: NavigationPage(),
+      bottomNavigationBar: const NavigationPage(),
     );
   }
 }

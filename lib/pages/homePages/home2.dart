@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_ecommerce_app/navigation.dart';
 
 class HomePage2 extends StatefulWidget {
+  const HomePage2({super.key});
+
   @override
   State<HomePage2> createState() => _HomePage2State();
 }
@@ -26,6 +28,7 @@ final Widget black = Image.asset(
 );
 
 class _HomePage2State extends State<HomePage2> {
+  @override
   Widget build(BuildContext context) {
     const mainBgColor = Color(0xfff9f9f9);
     const white = Color(0xffffffff);
@@ -126,7 +129,7 @@ class _HomePage2State extends State<HomePage2> {
           ),
         ],
       ),
-      bottomNavigationBar: NavigationPage(),
+      bottomNavigationBar: const NavigationPage(),
     );
   }
 }

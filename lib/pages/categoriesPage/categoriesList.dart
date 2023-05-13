@@ -20,6 +20,7 @@ class _CategoriesListPageState extends State<CategoriesListPage> {
     // fit: BoxFit.scaleDown,
   );
 
+  @override
   Widget build(BuildContext context) {
     const mainBgColor = Color(0xfff9f9f9);
     return DefaultTabController(
@@ -44,9 +45,9 @@ class _CategoriesListPageState extends State<CategoriesListPage> {
         ),
         body: Container(
           color: mainBgColor,
-          child: Column(
+          child: const Column(
             children: [
-              const TabBar(indicatorColor: Colors.red, tabs: [
+              TabBar(indicatorColor: Colors.red, tabs: [
                 Tab(child: Text("Women")),
                 Tab(child: Text("Men")),
                 Tab(child: Text("Kids"))
@@ -61,7 +62,7 @@ class _CategoriesListPageState extends State<CategoriesListPage> {
             ],
           ),
         ),
-        bottomNavigationBar: NavigationPage(),
+        bottomNavigationBar: const NavigationPage(),
       ),
     );
   }
