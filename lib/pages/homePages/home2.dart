@@ -53,8 +53,13 @@ class _HomePage2State extends State<HomePage2> {
                           fontWeight: FontWeight.w900),
                     ))
               ])),
-          SizedBox(
-            height: 374,
+          Container(
+            decoration: BoxDecoration(
+              shape: BoxShape.rectangle,
+              color: Colors.green,
+            ),
+            clipBehavior: Clip.hardEdge,
+            height: 422,
             child: Row(
               children: [
                 Column(
@@ -81,11 +86,11 @@ class _HomePage2State extends State<HomePage2> {
                       child: Container(
                           width: MediaQuery.of(context).size.width * 0.5,
                           color: Colors.purple,
-                          child: Stack(children: [
+                          child: Stack(fit: StackFit.expand, children: [
                             black,
                             const Positioned(
                                 bottom: 20,
-                                right: 15,
+                                left: 15,
                                 child: Text(
                                   "Black",
                                   style: TextStyle(
@@ -100,17 +105,19 @@ class _HomePage2State extends State<HomePage2> {
                 ),
                 Expanded(
                   flex: 1,
-                  child: Container(
+                  child: SizedBox(
                       width: MediaQuery.of(context).size.width * 0.5,
-                      color: Colors.orange,
-                      child: Stack(children: [
-                        ColorFiltered(colorFilter: ColorFilter.mode(Colors.grey.shade300, BlendMode.darken), child: mensHoodies),
-                         const Positioned(
-                          top: 150,
+                      child: Stack(fit: StackFit.expand, children: [
+                        ColorFiltered(
+                            colorFilter: ColorFilter.mode(
+                                Colors.grey.shade300, BlendMode.darken),
+                            child: mensHoodies),
+                        const Positioned(
+                            top: 165,
                             left: 40,
                             child: SizedBox(
                               width: 200,
-                              child:  Text(
+                              child: Text(
                                 "Men's hoodies",
                                 style: TextStyle(
                                     fontSize: 34,
