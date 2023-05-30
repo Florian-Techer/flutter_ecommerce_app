@@ -73,7 +73,7 @@ class _NavigationPageState extends State<NavigationPage> {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
-                                builder: (context) => const HomePage2()),
+                                builder: (context) => const HomePage()),
                           )
                         }),
                 IconBottomBar(
@@ -99,7 +99,7 @@ class _NavigationPageState extends State<NavigationPage> {
                           setState((() => _currentIndex = 2)),
                           Navigator.push(
                             context,
-                            MaterialPageRoute(builder: (context) => const HomePage()),
+                            MaterialPageRoute(builder: (context) => const HomePage2()),
                           )
                         }),
                 IconBottomBar(
