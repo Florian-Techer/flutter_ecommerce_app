@@ -3,22 +3,126 @@
     {
       "id": "1",
       "name": "New",
-      "imageSrc": "assets/images/png/new.png"
+      "imageSrc": "assets/images/png/new.png",
+      "catalog": {
+        "title": "women's news clothes",
+        "items": [
+          {
+            "id": "1",
+            "type": "pullover",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "source de l'image"
+          },
+          {
+            "id": "2",
+            "type": "t-shirt",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "source de l'image"
+          },
+          {
+            "id": "3",
+            "type": "crop-top",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "source de l'image"
+          }
+        ]
+      }
     },
     {
       "id": "2",
       "name": "Clothes",
-      "imageSrc": "assets/images/png/clothes.png"
+      "imageSrc": "assets/images/png/clothes.png",
+      "catalog": {
+        "title": "women's clothes",
+        "items": [
+          {
+            "id": "1",
+            "type": "pullover",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "source de l'image"
+          },
+          {
+            "id": "2",
+            "type": "t-shirt",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "source de l'image"
+          },
+          {
+            "id": "3",
+            "type": "crop-top",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "source de l'image"
+          }
+        ]
+      }
     },
     {
       "id": "3",
       "name": "Shoes",
-      "imageSrc": "assets/images/png/shoes.png"
+      "imageSrc": "assets/images/png/shoes.png",
+      "catalog": {
+        "title": "women's shoes",
+        "items": [
+          {
+            "id": "1",
+            "type": "pullover",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "source de l'image"
+          },
+          {
+            "id": "2",
+            "type": "t-shirt",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "source de l'image"
+          },
+          {
+            "id": "3",
+            "type": "crop-top",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "source de l'image"
+          }
+        ]
+      }
     },
     {
       "id": "4",
       "name": "Accesories",
-      "imageSrc": "assets/images/png/accesories.png"
+      "imageSrc": "assets/images/png/accesories.png",
+      "catalog": {
+        "title": "women's accesories",
+        "items": [
+          {
+            "id": "1",
+            "type": "pullover",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "source de l'image"
+          },
+          {
+            "id": "2",
+            "type": "t-shirt",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "source de l'image"
+          },
+          {
+            "id": "3",
+            "type": "crop-top",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "source de l'image"
+          }
+        ]
+      }
     }
   ],
   "menCategories": [
