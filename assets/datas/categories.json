@@ -6,6 +6,7 @@
       "imageSrc": "assets/images/png/new.png",
       "catalog": {
         "title": "women's news clothes",
+        "type": ["pullover", "t-shirt", "crop-top", "trousers", "jogging"],
         "items": [
           {
             "id": "1",
@@ -37,6 +38,7 @@
       "imageSrc": "assets/images/png/clothes.png",
       "catalog": {
         "title": "women's clothes",
+        "type": ["pullover", "t-shirt", "crop-top", "trousers", "jogging"],
         "items": [
           {
             "id": "1",
@@ -68,6 +70,7 @@
       "imageSrc": "assets/images/png/shoes.png",
       "catalog": {
         "title": "women's shoes",
+        "type": ["pullover", "t-shirt", "crop-top", "trousers", "jogging"],
         "items": [
           {
             "id": "1",
@@ -99,6 +102,7 @@
       "imageSrc": "assets/images/png/accesories.png",
       "catalog": {
         "title": "women's accesories",
+        "type": ["pullover", "t-shirt", "crop-top", "trousers", "jogging"],
         "items": [
           {
             "id": "1",
