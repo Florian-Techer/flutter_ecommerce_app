@@ -92,6 +92,10 @@ flutter:
     - assets/images/png/newCollection.png
     - assets/images/png/mensHoodies.png
     - assets/images/png/black.png
+    - assets/images/png/blouse.png
+    - assets/images/png/pullover.png
+    - assets/images/png/t-shirt.png
+    - assets/images/png/shirt.png
     - assets/images/svg/filter.svg
     - assets/images/svg/display.svg
     - assets/images/svg/arrow-sort.svg
