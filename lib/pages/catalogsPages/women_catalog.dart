@@ -16,6 +16,27 @@ class _WomenCatalogPageState extends State<WomenCatalogPage> {
     height: 25,
     // fit: BoxFit.scaleDown,
   );
+  final Widget filter = SvgPicture.asset(
+    'assets/images/svg/filter.svg',
+    // semanticsLabel: 'Retour en arrière',
+    width: 15,
+    height: 15,
+    // fit: BoxFit.scaleDown,
+  );
+  final Widget display = SvgPicture.asset(
+    'assets/images/svg/display.svg',
+    // semanticsLabel: 'Retour en arrière',
+    width: 25,
+    height: 25,
+    // fit: BoxFit.scaleDown,
+  );
+  final Widget sortArrow = SvgPicture.asset(
+    'assets/images/svg/arrow-sort.svg',
+    // semanticsLabel: 'Retour en arrière',
+    width: 20,
+    height: 20,
+    // fit: BoxFit.scaleDown,
+  );
   @override
   Widget build(BuildContext context) {
     const white = Color(0xffffffff);
@@ -24,95 +45,109 @@ class _WomenCatalogPageState extends State<WomenCatalogPage> {
         widget.catalog; // Accéder à la variable catalog via widget.catalog
     return Scaffold(
       appBar: AppBar(
-        toolbarHeight: 230,
-        leadingWidth: double.infinity,
-        backgroundColor: Colors.amber,
-        elevation: 2,
+        backgroundColor: white,
+        elevation: 0,
+        leading: IconButton(
+          icon: backArrow,
+          onPressed: () => {Navigator.pop(context)},
+        ),
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.search),
+            onPressed: () {},
+          ),
+        ],
         automaticallyImplyLeading: false,
-        title: Container(
-          color: Colors.red,
-          width: double.infinity,
-          child: Column(
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                IconButton(
-                  icon: backArrow,
-                  onPressed: () => {Navigator.pop(context)},
-                ),
-                IconButton(
-                  icon: const Icon(Icons.search),
-                  onPressed: () {},
-                ),
-              ]),
-              Row(
-                children: [
-                Container(
-                  height: 70,
-                  alignment: Alignment.bottomLeft,
-                  padding: const EdgeInsets.symmetric(horizontal: 15),
-                  margin: const EdgeInsets.only(bottom: 20),
-                  child: Text(
-                    catalog["title"],
-                    style: const TextStyle(
-                      fontSize: 35,
-                      fontWeight: FontWeight.bold,
+      ),
+      body: Column(
+        children: [
+          Container(
+            color: white,
+            child: Column(
+              children: [
+                Row(children: [
+                  Container(
+                    height: 70,
+                    alignment: Alignment.bottomLeft,
+                    padding: const EdgeInsets.symmetric(horizontal: 15),
+                    margin: const EdgeInsets.only(bottom: 20),
+                    child: Text(
+                      catalog["title"],
+                      style: const TextStyle(
+                        fontSize: 35,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
                   ),
+                ]),
+                Container(
+                  margin: const EdgeInsets.only(bottom: 15),
+                  width: double.infinity,
+                  height: 35,
+                  // margin: const EdgeInsets.symmetric(horizontal: 10),
+                  child: ListView.builder(
+                      physics: const ClampingScrollPhysics(),
+                      scrollDirection: Axis.horizontal,
+                      shrinkWrap: true,
+                      itemCount: types.length,
+                      itemBuilder: (context, index) {
+                        return Container(
+                            width: 90,
+                            height: 35,
+                            margin: index == 0
+                                ? const EdgeInsets.only(left: 10, right: 3)
+                                : index == types.length - 1
+                                    ? const EdgeInsets.only(right: 10, left: 3)
+                                    : const EdgeInsets.symmetric(horizontal: 3),
+                            padding: const EdgeInsets.only(
+                                left: 7, right: 7, top: 2, bottom: 2),
+                            decoration: BoxDecoration(
+                              color: Colors.black,
+                              borderRadius: BorderRadius.circular(50),
+                            ),
+                            child: Center(
+                                child: Text(
+                              types[index],
+                              style:
+                                  const TextStyle(fontSize: 14, color: white),
+                            )));
+                      }),
                 ),
-              ]),
-              Container(
-                color: Colors.blue,
-                margin: const EdgeInsets.only(bottom: 15),
-                width: double.infinity,
-                height: 35,
-                // margin: const EdgeInsets.symmetric(horizontal: 10),
-                child: ListView.builder(
-                    physics: const ClampingScrollPhysics(),
-                    scrollDirection: Axis.horizontal,
-                    shrinkWrap: true,
-                    itemCount: types.length,
-                    itemBuilder: (context, index) {
-                      return Container(
-                          width: 90,
-                          height: 35,
-                          margin: index == 0
-                              ? const EdgeInsets.only(left: 10, right: 3)
-                              : index == types.length - 1
-                                  ? const EdgeInsets.only(right: 10, left: 3)
-                                  : const EdgeInsets.symmetric(horizontal: 3),
-                          padding: const EdgeInsets.only(
-                              left: 7, right: 7, top: 2, bottom: 2),
-                          decoration: BoxDecoration(
-                            color: Colors.black,
-                            borderRadius: BorderRadius.circular(50),
-                          ),
-                          child: Center(
-                              child: Text(
-                            types[index],
-                            style: const TextStyle(fontSize: 14, color: white),
-                          )));
-                    }),
-              ),
-              const Padding(
-                padding: EdgeInsets.symmetric(horizontal: 20),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Row(
-                      children: [Icon(Icons.filter), Text("Filter")],
-                    ),
-                    Row(
-                      children: [Icon(Icons.sort), Text("Price")],
-                    ),
-                    Icon(Icons.search)
-                  ],
+                Container(
+                
+                  height: 50,
+                  decoration: BoxDecoration(
+                    color: white,
+                    boxShadow: [
+                      BoxShadow(
+                        color:
+                            Colors.black.withOpacity(0.1), // Couleur de l'ombre
+                        spreadRadius: 0.1, // Étendue de l'ombre
+                        blurRadius: 20, // Flou de l'ombre
+                        offset: const Offset(
+                            0, 15), // Décalage de l'ombre (0 en x, 4 en y)
+                      ),
+                    ],
+                  ),
+                  padding: const EdgeInsets.only(left: 20, right: 20),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    crossAxisAlignment: CrossAxisAlignment.center,
+                    children: [
+                      Row(
+                        children: [filter, const Text("Filter")],
+                      ),
+                      Row(
+                        children: [sortArrow, const Text("Price")],
+                      ),
+                      display
+                    ],
+                  ),
                 ),
-              )
-            ],
-          ),
-        ),
+              ],
+            ),
+          )
+        ],
       ),
     );
   }
