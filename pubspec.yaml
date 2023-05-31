@@ -92,6 +92,9 @@ flutter:
     - assets/images/png/newCollection.png
     - assets/images/png/mensHoodies.png
     - assets/images/png/black.png
+    - assets/images/svg/filter.svg
+    - assets/images/svg/display.svg
+    - assets/images/svg/arrow-sort.svg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
