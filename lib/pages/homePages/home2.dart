@@ -30,7 +30,6 @@ final Widget black = Image.asset(
 class _HomePage2State extends State<HomePage2> {
   @override
   Widget build(BuildContext context) {
-    const mainBgColor = Color(0xfff9f9f9);
     const white = Color(0xffffffff);
     const red = Color(0xffdb3022);
     return Scaffold(
@@ -54,7 +53,7 @@ class _HomePage2State extends State<HomePage2> {
                     ))
               ])),
           Container(
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               shape: BoxShape.rectangle,
               color: Colors.green,
             ),

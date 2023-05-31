@@ -23,69 +23,97 @@ class _WomenCatalogPageState extends State<WomenCatalogPage> {
     Map<String, dynamic> catalog =
         widget.catalog; // Accéder à la variable catalog via widget.catalog
     return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.transparent,
-          elevation: 0,
-          leading: IconButton(
-            icon: backArrow,
-            onPressed: () => {Navigator.pop(context)},
-          ),
-          actions: [
-            IconButton(
-              icon: const Icon(Icons.search),
-              onPressed: () {},
-            ),
-          ],
-        ),
-        body: Column(
-          children: [
-            Row(children: [
-              Container(
-                height: 70,
-                alignment: Alignment.bottomLeft,
-                padding: const EdgeInsets.symmetric(horizontal: 15),
-                margin: const EdgeInsets.only(bottom: 20),
-                child: Text(
-                  catalog["title"],
-                  style: const TextStyle(
-                    fontSize: 35,
-                    fontWeight: FontWeight.bold,
+      appBar: AppBar(
+        toolbarHeight: 230,
+        leadingWidth: double.infinity,
+        backgroundColor: Colors.amber,
+        elevation: 2,
+        automaticallyImplyLeading: false,
+        title: Container(
+          color: Colors.red,
+          width: double.infinity,
+          child: Column(
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                IconButton(
+                  icon: backArrow,
+                  onPressed: () => {Navigator.pop(context)},
+                ),
+                IconButton(
+                  icon: const Icon(Icons.search),
+                  onPressed: () {},
+                ),
+              ]),
+              Row(
+                children: [
+                Container(
+                  height: 70,
+                  alignment: Alignment.bottomLeft,
+                  padding: const EdgeInsets.symmetric(horizontal: 15),
+                  margin: const EdgeInsets.only(bottom: 20),
+                  child: Text(
+                    catalog["title"],
+                    style: const TextStyle(
+                      fontSize: 35,
+                      fontWeight: FontWeight.bold,
+                    ),
                   ),
                 ),
+              ]),
+              Container(
+                color: Colors.blue,
+                margin: const EdgeInsets.only(bottom: 15),
+                width: double.infinity,
+                height: 35,
+                // margin: const EdgeInsets.symmetric(horizontal: 10),
+                child: ListView.builder(
+                    physics: const ClampingScrollPhysics(),
+                    scrollDirection: Axis.horizontal,
+                    shrinkWrap: true,
+                    itemCount: types.length,
+                    itemBuilder: (context, index) {
+                      return Container(
+                          width: 90,
+                          height: 35,
+                          margin: index == 0
+                              ? const EdgeInsets.only(left: 10, right: 3)
+                              : index == types.length - 1
+                                  ? const EdgeInsets.only(right: 10, left: 3)
+                                  : const EdgeInsets.symmetric(horizontal: 3),
+                          padding: const EdgeInsets.only(
+                              left: 7, right: 7, top: 2, bottom: 2),
+                          decoration: BoxDecoration(
+                            color: Colors.black,
+                            borderRadius: BorderRadius.circular(50),
+                          ),
+                          child: Center(
+                              child: Text(
+                            types[index],
+                            style: const TextStyle(fontSize: 14, color: white),
+                          )));
+                    }),
               ),
-            ]),
-            SizedBox(
-              width: double.infinity,
-              height: 35,
-              // margin: const EdgeInsets.symmetric(horizontal: 10),
-              child: ListView.builder(
-                  physics: const ClampingScrollPhysics(),
-                  scrollDirection: Axis.horizontal,
-                  shrinkWrap: true,
-                  itemCount: types.length,
-                  itemBuilder: (context, index) {
-                    return Container(
-                        width: 90,
-                        height: 35,
-                        margin: index == 0
-                            ? const EdgeInsets.only(left: 10, right: 3)
-                            : index == types.length - 1
-                                ? const EdgeInsets.only(right: 10, left: 3)
-                                : const EdgeInsets.symmetric(horizontal: 3),
-                        padding: const EdgeInsets.only(
-                            left: 7, right: 7, top: 2, bottom: 2),
-                        decoration: BoxDecoration(
-                          color: Colors.black,
-                          borderRadius: BorderRadius.circular(50),
-                        ),
-                        child: Center(
-                            child: Text(
-                          types[index],
-                          style: const TextStyle(fontSize: 14, color: white),
-                        )));
-                  }),
-            )
-          ],
-        ));
+              const Padding(
+                padding: EdgeInsets.symmetric(horizontal: 20),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Row(
+                      children: [Icon(Icons.filter), Text("Filter")],
+                    ),
+                    Row(
+                      children: [Icon(Icons.sort), Text("Price")],
+                    ),
+                    Icon(Icons.search)
+                  ],
+                ),
+              )
+            ],
+          ),
+        ),
+      ),
+    );
   }
 }
