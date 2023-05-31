@@ -106,24 +106,59 @@
         "items": [
           {
             "id": "1",
-            "type": "pullover",
+            "type": "Pullover",
+            "marque": "Levi's",
             "rate": 5,
             "price": "51",
-            "imageSrc": "source de l'image"
+            "imageSrc": "assets/images/png/pullover.png"
           },
           {
             "id": "2",
-            "type": "t-shirt",
+            "type": "T-shirt",
+            "marque": "Mango",
             "rate": 5,
             "price": "51",
-            "imageSrc": "source de l'image"
+            "imageSrc": "assets/images/png/shirt.png"
           },
           {
             "id": "3",
-            "type": "crop-top",
+            "type": "Crop-top",
+            "marque": "Lacoste",
             "rate": 5,
             "price": "51",
-            "imageSrc": "source de l'image"
+            "imageSrc": "assets/images/png/blouse.png"
+          },
+          {
+            "id": "4",
+            "type": "Pull",
+            "marque": "Nike",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "assets/images/png/t-shirt.png"
+          },
+          {
+            "id": "5",
+            "type": "Blouse",
+            "marque": "Pimkie",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "assets/images/png/blouse.png"
+          },
+          {
+            "id": "6",
+            "type": "Chemise",
+            "marque": "H&M",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "assets/images/png/pullover.png"
+          },
+          {
+            "id": "7",
+            "type": "Shirt",
+            "marque": "Pull & Bear",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "assets/images/png/shirt.png"
           }
         ]
       }

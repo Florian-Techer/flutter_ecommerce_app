@@ -40,6 +40,8 @@ class _WomenCatalogPageState extends State<WomenCatalogPage> {
   @override
   Widget build(BuildContext context) {
     const white = Color(0xffffffff);
+    const mainBgColor = Color(0xfff9f9f9);
+    List _items = widget.catalog['items'];
     List<String> types = List<String>.from(widget.catalog['type']);
     Map<String, dynamic> catalog =
         widget.catalog; // Accéder à la variable catalog via widget.catalog
@@ -114,7 +116,6 @@ class _WomenCatalogPageState extends State<WomenCatalogPage> {
                       }),
                 ),
                 Container(
-                
                   height: 50,
                   decoration: BoxDecoration(
                     color: white,
@@ -146,7 +147,57 @@ class _WomenCatalogPageState extends State<WomenCatalogPage> {
                 ),
               ],
             ),
-          )
+          ),
+          Expanded(
+            child: Container(
+                color: mainBgColor,
+                child: ListView.builder(
+                    itemCount: _items.length,
+                    itemBuilder: (context, index) {
+                      return SizedBox(
+                        height: 110,
+                        child: Card(
+                          margin: const EdgeInsets.symmetric(
+                              vertical: 10, horizontal: 20),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10.0),
+                          ),
+                          child: Row(children: [
+                            SizedBox(
+                                width: 100,
+                                child: Image.asset(
+                                  _items[index]["imageSrc"],
+                                  fit: BoxFit.cover,
+                                )),
+                            Container(
+                                padding: const EdgeInsets.all(15),
+                                child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        _items[index]["type"],
+                                        style: const TextStyle(
+                                          fontSize: 16,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      Text(_items[index]["marque"],
+                                          style: const TextStyle(
+                                              fontSize: 12,
+                                              color: Color.fromRGBO(
+                                                  189, 189, 189, 1))),
+                                      // Row(children: [
+                                        
+                                      // ],),
+                                      Text('${_items[index]["price"]} \$')
+                                    ]))
+                          ]),
+                        ),
+                      );
+                    })),
+          ),
         ],
       ),
     );
