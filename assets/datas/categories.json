@@ -31,6 +31,54 @@
             "rate": 4,
             "price": "51",
             "imageSrc": "assets/images/png/blouse.png"
+          },
+          {
+            "id": "1",
+            "type": "pullover",
+            "marque": "Lacoste",
+            "rate": 1,
+            "price": "51",
+            "imageSrc": "assets/images/png/pullover.png"
+          },
+          {
+            "id": "2",
+            "type": "t-shirt",
+            "marque": "Dior",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "assets/images/png/shirt.png"
+          },
+          {
+            "id": "3",
+            "type": "crop-top",
+            "marque": "Prada",
+            "rate": 4,
+            "price": "51",
+            "imageSrc": "assets/images/png/blouse.png"
+          },
+          {
+            "id": "1",
+            "type": "pullover",
+            "marque": "Lacoste",
+            "rate": 2,
+            "price": "51",
+            "imageSrc": "assets/images/png/pullover.png"
+          },
+          {
+            "id": "2",
+            "type": "t-shirt",
+            "marque": "Dior",
+            "rate": 2,
+            "price": "51",
+            "imageSrc": "assets/images/png/shirt.png"
+          },
+          {
+            "id": "3",
+            "type": "crop-top",
+            "marque": "Prada",
+            "rate": 4,
+            "price": "51",
+            "imageSrc": "assets/images/png/blouse.png"
           }
         ]
       }
@@ -46,13 +94,15 @@
           {
             "id": "1",
             "type": "pullover",
+            "marque": "Prada",
             "rate": 5,
-            "price": "51",
+            "price": "59",
             "imageSrc": "assets/images/png/blouse.png"
           },
           {
             "id": "2",
             "type": "t-shirt",
+            "marque": "Gucci",
             "rate": 5,
             "price": "51",
             "imageSrc": "assets/images/png/t-shirt.png"
@@ -60,6 +110,55 @@
           {
             "id": "3",
             "type": "crop-top",
+            "marque": "Nike",
+            "rate": 4,
+            "price": "120",
+            "imageSrc": "assets/images/png/shirt.png"
+          },
+          {
+            "id": "2",
+            "type": "shirt",
+            "marque": "Gucci",
+            "rate": 3,
+            "price": "452",
+            "imageSrc": "assets/images/png/pullover.png"
+          },
+          {
+            "id": "3",
+            "type": "top",
+            "marque": "Nike",
+            "rate": 4,
+            "price": "47",
+            "imageSrc": "assets/images/png/shirt.png"
+          },
+          {
+            "id": "2",
+            "type": "blouse",
+            "marque": "Gucci",
+            "rate": 2,
+            "price": "45",
+            "imageSrc": "assets/images/png/blouse.png"
+          },
+          {
+            "id": "3",
+            "type": "crop-top",
+            "marque": "Nike",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "assets/images/png/shirt.png"
+          },
+          {
+            "id": "2",
+            "type": "t-shirt",
+            "marque": "Gucci",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "assets/images/png/t-shirt.png"
+          },
+          {
+            "id": "3",
+            "type": "crop-top",
+            "marque": "Nike",
             "rate": 5,
             "price": "51",
             "imageSrc": "assets/images/png/shirt.png"
@@ -78,6 +177,7 @@
           {
             "id": "1",
             "type": "pullover",
+            "marque": "Louis Vuitton",
             "rate": 5,
             "price": "51",
             "imageSrc": "assets/images/png/shirt.png"
@@ -85,6 +185,7 @@
           {
             "id": "2",
             "type": "t-shirt",
+            "marque": "Celio",
             "rate": 5,
             "price": "51",
             "imageSrc": "assets/images/png/blouse.png"
@@ -92,6 +193,55 @@
           {
             "id": "3",
             "type": "crop-top",
+            "marque": "H&M",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "assets/images/png/pullover.png"
+          },
+          {
+            "id": "1",
+            "type": "pullover",
+            "marque": "Louis Vuitton",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "assets/images/png/shirt.png"
+          },
+          {
+            "id": "2",
+            "type": "t-shirt",
+            "marque": "Celio",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "assets/images/png/blouse.png"
+          },
+          {
+            "id": "3",
+            "type": "crop-top",
+            "marque": "H&M",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "assets/images/png/pullover.png"
+          },
+          {
+            "id": "1",
+            "type": "pullover",
+            "marque": "Louis Vuitton",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "assets/images/png/shirt.png"
+          },
+          {
+            "id": "2",
+            "type": "t-shirt",
+            "marque": "Celio",
+            "rate": 5,
+            "price": "51",
+            "imageSrc": "assets/images/png/blouse.png"
+          },
+          {
+            "id": "3",
+            "type": "crop-top",
+            "marque": "H&M",
             "rate": 5,
             "price": "51",
             "imageSrc": "assets/images/png/pullover.png"
