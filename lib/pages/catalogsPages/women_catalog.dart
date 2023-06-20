@@ -188,9 +188,7 @@ class _WomenCatalogPageState extends State<WomenCatalogPage> {
                                               fontSize: 12,
                                               color: Color.fromRGBO(
                                                   189, 189, 189, 1))),
-                                      // Row(children: [
-                                        
-                                      // ],),
+                                      
                                       Text('${_items[index]["price"]} \$')
                                     ]))
                           ]),

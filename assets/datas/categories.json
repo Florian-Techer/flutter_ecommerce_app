@@ -11,23 +11,26 @@
           {
             "id": "1",
             "type": "pullover",
+            "marque": "Lacoste",
             "rate": 5,
             "price": "51",
-            "imageSrc": "source de l'image"
+            "imageSrc": "assets/images/png/pullover.png"
           },
           {
             "id": "2",
             "type": "t-shirt",
+            "marque": "Dior",
             "rate": 5,
             "price": "51",
-            "imageSrc": "source de l'image"
+            "imageSrc": "assets/images/png/shirt.png"
           },
           {
             "id": "3",
             "type": "crop-top",
+            "marque": "Prada",
             "rate": 5,
             "price": "51",
-            "imageSrc": "source de l'image"
+            "imageSrc": "assets/images/png/blouse.png"
           }
         ]
       }
@@ -45,21 +48,21 @@
             "type": "pullover",
             "rate": 5,
             "price": "51",
-            "imageSrc": "source de l'image"
+            "imageSrc": "assets/images/png/blouse.png"
           },
           {
             "id": "2",
             "type": "t-shirt",
             "rate": 5,
             "price": "51",
-            "imageSrc": "source de l'image"
+            "imageSrc": "assets/images/png/t-shirt.png"
           },
           {
             "id": "3",
             "type": "crop-top",
             "rate": 5,
             "price": "51",
-            "imageSrc": "source de l'image"
+            "imageSrc": "assets/images/png/shirt.png"
           }
         ]
       }
@@ -77,21 +80,21 @@
             "type": "pullover",
             "rate": 5,
             "price": "51",
-            "imageSrc": "source de l'image"
+            "imageSrc": "assets/images/png/shirt.png"
           },
           {
             "id": "2",
             "type": "t-shirt",
             "rate": 5,
             "price": "51",
-            "imageSrc": "source de l'image"
+            "imageSrc": "assets/images/png/blouse.png"
           },
           {
             "id": "3",
             "type": "crop-top",
             "rate": 5,
             "price": "51",
-            "imageSrc": "source de l'image"
+            "imageSrc": "assets/images/png/pullover.png"
           }
         ]
       }
