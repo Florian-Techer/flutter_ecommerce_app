@@ -37,6 +37,15 @@ class _WomenCatalogPageState extends State<WomenCatalogPage> {
     height: 20,
     // fit: BoxFit.scaleDown,
   );
+  final Widget star = SvgPicture.asset(
+    'assets/images/svg/star.svg',
+    width: 10,
+  );
+
+  final Widget starFilled = SvgPicture.asset(
+    'assets/images/svg/starFilled.svg',
+    width: 10,
+  );
   @override
   Widget build(BuildContext context) {
     const white = Color(0xffffffff);
@@ -188,7 +197,15 @@ class _WomenCatalogPageState extends State<WomenCatalogPage> {
                                               fontSize: 12,
                                               color: Color.fromRGBO(
                                                   189, 189, 189, 1))),
-                                      
+                                      Row(
+                                        children: [
+                                          for (int i = 0; i < 5; i++)
+                                            if (i < _items[index]["rate"])
+                                              SizedBox(width: 12, child: starFilled)
+                                            else
+                                              SizedBox(width: 12, child: star),
+                                        ],
+                                      ),
                                       Text('${_items[index]["price"]} \$')
                                     ]))
                           ]),

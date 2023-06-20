@@ -20,7 +20,7 @@
             "id": "2",
             "type": "t-shirt",
             "marque": "Dior",
-            "rate": 5,
+            "rate": 2,
             "price": "51",
             "imageSrc": "assets/images/png/shirt.png"
           },
@@ -28,7 +28,7 @@
             "id": "3",
             "type": "crop-top",
             "marque": "Prada",
-            "rate": 5,
+            "rate": 4,
             "price": "51",
             "imageSrc": "assets/images/png/blouse.png"
           }
